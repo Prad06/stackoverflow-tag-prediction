@@ -1,0 +1,20 @@
+SVM Results
+===========
+
+Test Error: 0.1602
+Cross-validation Error: 0.1647
+F1 Score: 0.8418
+AUC Score: 0.9710
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         CPP       0.69      0.90      0.79      1000
+        Java       0.86      0.78      0.82      1000
+  JavaScript       0.89      0.84      0.87      1000
+      Python       0.87      0.80      0.83      1000
+         SQL       0.94      0.87      0.91      1000
+
+    accuracy                           0.84      5000
+   macro avg       0.85      0.84      0.84      5000
+weighted avg       0.85      0.84      0.84      5000
