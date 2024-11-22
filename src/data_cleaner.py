@@ -1,24 +1,24 @@
 import string
 
+# Download nltk corpus
+import nltk
 import pandas as pd
 from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# Download nltk corpus
-import nltk
-nltk.download('omw-1.4')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
-nltk.download('word_tokenize')
+nltk.download("omw-1.4")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+nltk.download("word_tokenize")
 print("\nCorpus Downloaded")
+
 
 def preprocess_data():
     # Load and preprocess the data
     df_javascript = pd.read_csv("~/project--eece7205/data/QueryResults_JS.csv")
-    df_cplusplus = pd.read_csv(
-        "~/project--eece7205/data/QueryResults_cplusplus.csv")
+    df_cplusplus = pd.read_csv("~/project--eece7205/data/QueryResults_cplusplus.csv")
     df_python = pd.read_csv("~/project--eece7205/data/QueryResults_Python.csv")
     df_sql = pd.read_csv("~/project--eece7205/data/QueryResults_SQL.csv")
     df_java = pd.read_csv("~/project--eece7205/data/QueryResults_Java.csv")
@@ -27,7 +27,6 @@ def preprocess_data():
     def merge_add_labels(*args):
         labeled_dfs = [(df.assign(Label=label)) for df, label in args]
         return pd.concat(labeled_dfs, ignore_index=True)
-
 
     df_labeled = merge_add_labels(
         (df_javascript, "JavaScript"),
@@ -47,7 +46,6 @@ def preprocess_data():
             if word not in stopwords.words("english")
         ]
         return " ".join(text)
-
 
     df_labeled["Processed_Text"] = df_labeled["Title"].apply(preprocess_text)
     print("\nText Processed")

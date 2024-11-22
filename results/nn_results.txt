@@ -1,0 +1,17 @@
+Neural Network Results
+======================
+
+Best validation accuracy: 0.8106
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         CPP       0.75      0.81      0.78      1000
+        Java       0.79      0.76      0.78      1005
+  JavaScript       0.84      0.82      0.83      1021
+      Python       0.77      0.79      0.78       985
+         SQL       0.88      0.87      0.88       989
+
+    accuracy                           0.81      5000
+   macro avg       0.81      0.81      0.81      5000
+weighted avg       0.81      0.81      0.81      5000

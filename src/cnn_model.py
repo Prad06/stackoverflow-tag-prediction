@@ -41,8 +41,8 @@ class CustomNN(nn.Module):
 def neuralNetOut(
     X,
     y,
-    save_path="~/result/nn_results.txt",
-    model_save_path="~/result/nn_model.joblib",
+    save_path="../results/nn_results.txt",
+    model_save_path="../models/nn_model.joblib",
     epochs=100,
     batch_size=32,
     learning_rate=0.001,
@@ -171,7 +171,7 @@ def neuralNetOut(
     plt.xlabel("Predicted")
     plt.ylabel("True")
     plt.title("Neural Network - Confusion Matrix")
-    plt.savefig("nn_confusion_matrix.png")
+    plt.savefig("../results/nn_confusion_matrix.png")
     plt.close()
 
     # Plot training curves
@@ -191,7 +191,7 @@ def neuralNetOut(
     plt.ylabel("Accuracy")
     plt.legend()
     plt.tight_layout()
-    plt.savefig("nn_learning_curves.png")
+    plt.savefig("../results/nn_learning_curves.png")
     plt.close()
 
     # Save model

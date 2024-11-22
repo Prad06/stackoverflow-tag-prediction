@@ -1,0 +1,8 @@
+DistilBERT Results
+===================
+
+Test Accuracy: 0.8730
+Test F1 Score: 0.8730
+
+Classification Report:
+{'accuracy': 0.873, 'f1': np.float64(0.8729659313215267)}

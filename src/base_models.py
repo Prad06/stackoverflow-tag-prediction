@@ -25,8 +25,8 @@ from torch.utils.data import DataLoader, TensorDataset
 def logisticRegressionOut(
     X,
     y,
-    result_save_path="~/result/lr_results.txt",
-    model_save_path="~/result/lr.joblib",
+    result_save_path="../results/lr_results.txt",
+    model_save_path="../models/lr.joblib",
 ):
     print("Starting Logistic Regression...")
 
@@ -76,7 +76,7 @@ def logisticRegressionOut(
     plt.xlabel("Predicted")
     plt.ylabel("True")
     plt.title("Logistic Regression - Confusion Matrix")
-    plt.savefig("lr_confusion_matrix.png")
+    plt.savefig("../results/lr_confusion_matrix.png")
     plt.close()
 
     if model_save_path:
@@ -89,8 +89,8 @@ def logisticRegressionOut(
 def randomForestOut(
     X,
     y,
-    save_path="~/result/rf_results.txt",
-    model_save_path="~/result/randomForest.joblib",
+    save_path="../results/rf_results.txt",
+    model_save_path="../models/randomForest.joblib",
 ):
     print("Starting Random Forest...")
 
@@ -189,7 +189,7 @@ def randomForestOut(
     plt.xlabel("Predicted")
     plt.ylabel("True")
     plt.title("Random Forest - Confusion Matrix")
-    plt.savefig("rf_confusion_matrix.png")
+    plt.savefig("../results/rf_confusion_matrix.png")
     plt.close()
 
     plt.figure(figsize=(12, 6))
@@ -201,7 +201,7 @@ def randomForestOut(
     plt.ylabel("Score")
     plt.title("Random Forest - Model Performance vs Number of Trees")
     plt.legend()
-    plt.savefig("rf_performance_plot.png")
+    plt.savefig("../results/rf_performance_plot.png")
     plt.close()
 
     if model_save_path:
@@ -214,8 +214,8 @@ def randomForestOut(
 def svmOut(
     X,
     y,
-    save_path="~/result/svm_results.txt",
-    model_save_path="~/result/svm_model.joblib",
+    save_path="../results/svm_results.txt",
+    model_save_path="../models/svm_model.joblib",
 ):
     print("Starting SVM...")
 
@@ -280,7 +280,7 @@ def svmOut(
     plt.xlabel("Predicted")
     plt.ylabel("True")
     plt.title("SVM - Confusion Matrix")
-    plt.savefig("svm_confusion_matrix.png")
+    plt.savefig("../results/svm_confusion_matrix.png")
     plt.close()
 
     if model_save_path:
