@@ -1,32 +1,25 @@
 # StackOverflow Tag Prediction
 
-This project aims to predict tags for StackOverflow questions using machine learning techniques.
+This project aims to predict tags for StackOverflow questions using machine learning techniques. The goal is to assist users in categorizing their questions more accurately and efficiently.
 
-## Table of Contents
+## Project Structure
 
-- [Introduction](#introduction)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model](#model)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-StackOverflow is a popular platform for developers to ask and answer questions. Each question is tagged with relevant keywords. This project focuses on predicting these tags based on the content of the questions.
-
-## Dataset
-
-The dataset used for this project is sourced from the StackOverflow archives. It includes questions, their corresponding tags, and other metadata.
+- `data/`: Contains the dataset used for training and testing the model.
+- `notebooks/`: Jupyter notebooks for data exploration, preprocessing, and model training.
+- `src/`: Source code for data processing, feature extraction, and model implementation.
+- `models/`: Saved models and related files.
+- `results/`: Evaluation results and performance metrics.
+- `readme`: Project documentation.
 
 ## Installation
 
-To install the necessary dependencies, run:
+To set up the project, clone the repository and install the required dependencies and run the models:
 
 ```bash
+git clone https://github.com/yourusername/StackOverflow-Tag-Prediction.git
+cd StackOverflow-Tag-Prediction
 pip install -r requirements.txt
+python src/main.py
 ```
 
 ## Usage
@@ -45,16 +38,8 @@ python predict.py --question "Your question here"
 
 ## Model
 
-The model is built using natural language processing (NLP) techniques and machine learning algorithms. Details about the model architecture and training process can be found in the `model` directory.
+The model is built using natural language processing (NLP) techniques and machine learning algorithms. Details about the model architecture and training process can be found in the `model` directory. (Will be shared on request, reach out to choudhari.pra@northeastern.edu)
 
 ## Results
 
 The performance of the model is evaluated using metrics such as accuracy, precision, recall, and F1-score. Detailed results and analysis can be found in the `results` directory.
-
-## Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) for more information.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
