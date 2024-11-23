@@ -43,3 +43,13 @@ The model is built using natural language processing (NLP) techniques and machin
 ## Results
 
 The performance of the model is evaluated using metrics such as accuracy, precision, recall, and F1-score. Detailed results and analysis can be found in the `results` directory.
+
+## Model Performance
+
+| Model                    | Accuracy |
+| ------------------------ | -------- |
+| Logistic Regression      | 0.84     |
+| Random Forest Classifier | 0.81     |
+| SVM                      | 0.85     |
+| Neural Networks          | 0.81     |
+| DistilBERT               | 0.87     |
