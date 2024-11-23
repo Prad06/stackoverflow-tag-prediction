@@ -27,7 +27,7 @@ python src/main.py
 To train the model, use the following command:
 
 ```bash
-python train.py
+python main.py
 ```
 
 To predict tags for new questions, use:
